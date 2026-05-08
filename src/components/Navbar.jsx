@@ -28,7 +28,7 @@
 //   return (
 //     <nav className="bg-white shadow-sm">
 //       <div className="container mx-auto p-4 flex justify-between items-center">
-        
+
 //         {/* LEFT: Logo + Title */}
 //         <Link to="/" className="flex items-center gap-3">
 //           <img src={logo} alt="Service Desk Logo" className="h-10 w-auto" />
@@ -88,7 +88,7 @@
 //   return (
 //     <nav className="bg-slate-900 text-white shadow-lg">
 //       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        
+
 //         {/* LEFT: Logo + Title */}
 //         <Link to="/" className="flex items-center gap-3">
 //           <img src={logo} alt="Service Desk Logo" className="h-10 w-auto drop-shadow-md" />
@@ -97,13 +97,13 @@
 
 //         {/* RIGHT: Menu */}
 //         <div className="flex items-center gap-6 text-lg">
-          
+
 //           {user ? (
 //             <>
 //               <Link to="/tickets" className="hover:text-blue-400 transition">
 //                 My Tickets
 //               </Link>
-              
+
 //               {/* 🔥 Only admin sees Admin Panel */}
 //               {user.isAdmin && (
 //                 <Link to="/admin" className="hover:text-blue-400 transition">
@@ -163,7 +163,7 @@ export default function Navbar() {
   return (
     <nav className="bg-slate-900 text-white shadow-lg">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        
+
         {/* LEFT: Logo + Title */}
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Service Desk Logo" className="h-10 w-auto drop-shadow-md" />
@@ -210,4 +210,6 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
 

@@ -2,7 +2,7 @@ import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../features/auth/authSlice";
-import logo from "../assets/Service Desk Png.png";   // ✅ Corrected path
+import logo from "../assets/Service Desk Png.png";   
 
 function Header() {
   const dispatch = useDispatch();
@@ -57,3 +57,7 @@ function Header() {
 }
 
 export default Header;
+
+
+
+

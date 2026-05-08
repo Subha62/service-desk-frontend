@@ -1,41 +1,41 @@
-// import React, { useState } from 'react';
-// import api from '../api/axios';
-// import { useNavigate } from 'react-router-dom';
+// // import React, { useState } from 'react';
+// // import api from '../api/axios';
+// // import { useNavigate } from 'react-router-dom';
 
-// export default function CreateTicket() {
-//   const [title, setTitle] = useState('');
-//   const [description, setDescription] = useState('');
-//   const [priority, setPriority] = useState('Low');
-//   const nav = useNavigate();
+// // export default function CreateTicket() {
+// //   const [title, setTitle] = useState('');
+// //   const [description, setDescription] = useState('');
+// //   const [priority, setPriority] = useState('Low');
+// //   const nav = useNavigate();
 
-//   const submit = async (e) => {
-//     e.preventDefault();
-//     try {
-//       await api.post('/tickets', { title, description, priority }, {
-//         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
-//       });
-//       nav('/tickets');
-//     } catch (err) {
-//       alert(err.response?.data?.message || 'Failed to create ticket');
-//     }
-//   };
+// //   const submit = async (e) => {
+// //     e.preventDefault();
+// //     try {
+// //       await api.post('/tickets', { title, description, priority }, {
+// //         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
+// //       });
+// //       nav('/tickets');
+// //     } catch (err) {
+// //       alert(err.response?.data?.message || 'Failed to create ticket');
+// //     }
+// //   };
 
-//   return (
-//     <div className="max-w-2xl mx-auto bg-white p-6 rounded shadow">
-//       <h2 className="text-xl font-bold mb-4">Create Ticket</h2>
-//       <form onSubmit={submit} className="space-y-3">
-//         <input className="w-full p-2 border rounded" placeholder="Title" value={title} onChange={e=>setTitle(e.target.value)} />
-//         <textarea className="w-full p-2 border rounded" placeholder="Description" value={description} onChange={e=>setDescription(e.target.value)} />
-//         <select value={priority} onChange={e=>setPriority(e.target.value)} className="p-2 border rounded">
-//           <option>Low</option>
-//           <option>Medium</option>
-//           <option>High</option>
-//         </select>
-//         <button className="w-full bg-blue-600 text-white p-2 rounded">Create</button>
-//       </form>
-//     </div>
-//   );
-// }
+// //   return (
+// //     <div className="max-w-2xl mx-auto bg-white p-6 rounded shadow">
+// //       <h2 className="text-xl font-bold mb-4">Create Ticket</h2>
+// //       <form onSubmit={submit} className="space-y-3">
+// //         <input className="w-full p-2 border rounded" placeholder="Title" value={title} onChange={e=>setTitle(e.target.value)} />
+// //         <textarea className="w-full p-2 border rounded" placeholder="Description" value={description} onChange={e=>setDescription(e.target.value)} />
+// //         <select value={priority} onChange={e=>setPriority(e.target.value)} className="p-2 border rounded">
+// //           <option>Low</option>
+// //           <option>Medium</option>
+// //           <option>High</option>
+// //         </select>
+// //         <button className="w-full bg-blue-600 text-white p-2 rounded">Create</button>
+// //       </form>
+// //     </div>
+// //   );
+// // }
 
 
 
@@ -135,3 +135,7 @@ export default function CreateTicket() {
     </div>
   );
 }
+
+
+
+
